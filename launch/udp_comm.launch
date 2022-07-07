@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="udp_comm" type="udp_comm" name="udp_comm" output="screen" respawn="true"> 
+        <rosparam command="load" file="$(find udp_comm)/cfg/config.yaml"/>
+    </node>  
+</launch>
+
